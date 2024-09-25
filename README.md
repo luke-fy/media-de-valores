@@ -1,2 +1,2 @@
 # progrma-em-c
- codigo em c pra rmedir potencia 
+ codigo em c pra medir potencia 
