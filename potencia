@@ -1,0 +1,29 @@
+// programa para medir 20 valores e identificar maior e menor 
+int main(){
+    float potencias[20]; // um vetor de 20 posições
+    float maiorV;
+    float menorV;
+    int i;
+
+  for(i = 0 ; i < 20; i++ ){     // será feito um loop de vinte vezes para armazenar os valores
+     printf("Digite o valor da potencia: ");
+     scanf("%f",&potencias[i]);
+
+  }
+  maiorV = potencias[0];   // declara o primeiro valor, como maior e depois compara com os proximos para ver continua como maior ou substitui
+  for(i = 0 ; i < 20 ; i++ ){
+     if(potencias[i] > maiorV){
+        maiorV = potencias[i];
+     }
+  }
+  menorV = potencias[0]; // declara o primeiro valor como menor e depois compara com os proximos para ver continua como menor ou substitui
+  for(i = 0 ; i < 20 ; i++ ){
+     if(potencias[i] < menorV){
+        menorV = potencias[i];
+     }
+  }
+printf("A maior potencia atingida pela maquina foi: %f\n",maiorV); // mostra o maior valor 
+printf("A menor potencia atingida pela maquina foi: %f",menorV); // mostra o menor valor
+
+    return 0;
+}
